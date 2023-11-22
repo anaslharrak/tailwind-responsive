@@ -5,7 +5,7 @@ function App() {
 
   return (
     <>
-      <section className='grid gap-8 text-center bg-green-400 md:grid-cols-2 md:items-center md:text-left md:max-lg:bg-orange-400 lg:bg-blue-300 '>
+      <section className='grid h-auto w-10/12 items-center p-10 gap-8 text-center rounded-lg grid-cols-1 bg-green-400 md:grid-cols-2 md:items-center md:text-left md:max-lg:bg-orange-400 lg:bg-blue-300 '>
 
         <div className="">
           <img src={exampleImage} alt="" className='w-full rounded-lg' />
