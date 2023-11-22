@@ -5,27 +5,24 @@ function App() {
 
   return (
     <>
-      <section className='grid h-auto w-10/12 items-center p-10 gap-8 text-center rounded-lg grid-cols-1 bg-green-400 md:grid-cols-2  md:items-center bg-yellow-400 md:text-left md:bg-orange-400 lg:bg-blue-300 '>
+      <div className="grid h-[auto] w-[90vw] items-center p-[2vmax] gap-[1vmax] bg-green-500 text-white text-center rounded-[0.5vw] grid-cols-1 sm:grid-cols-2">
+  <div>
+    <img src={exampleImage} alt="" className="h-[35vmax] w-auto max-w-full rounded-[2vw] object-cover" />
+  </div>
+  <div>
+    <h1 className="m-0 text-[4.5vmax] font-bold">Headline</h1>
+    <div className="gap-1 grid grid-cols-1">
+      <p className="font-light text-[2.5vmax]">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus cum quidem odio dicta ipsam nesciunt earum numquam ex nulla facere. Laborum est qui quasi animi cum alias tempore, sint ut. Lore
+      </p>
+      <div className="grid gap-1 grid-cols-1">
+        <button className="text-[2.5vmax] border-2 bg-green-600 border-green-800 rounded-md">Test 1</button>
+        <button className="text-[2.5vmax] border-2 bg-white text-green-600 border-green-800 rounded-md">Test 2</button>
+      </div>
+    </div>
+  </div>
+</div>
 
-        <div>
-          <img src={exampleImage} alt="" className='w-full rounded-lg' />
-        </div>
-
-        <div>
-          <h1 className='mb-2 text-4xl font-black'>Headline</h1>
-          <div className='gap-10 grid grid-cols-1'>
-          <p className='font-thin text-2xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            Voluptatibus cum quidem odio dicta ipsam nesciunt earum numquam ex nulla facere. 
-            Laborum est qui quasi animi cum alias tempore, sint ut. Lore</p>
-
-            <div className='gap-1 grid grid-cols-1'>
-              <button className='bg-blue-500 text-white text-base sm:text-lg md:text-xl lg:text-2xl border-2 border-blue-600 rounded-md p-4'>Test 1</button>
-              <button className='bg-white text-blue-500 sm:text-lg md:text-xl lg:text-2xl border-2 border-blue-600 rounded-md p-4'>Test 2</button>
-            </div>
-          </div>
-        </div>
-
-      </section>    
     </>
   )
 }
